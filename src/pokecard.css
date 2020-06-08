@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    /* border: 1px solid blue; */
+}
+.pokecard{
+    background: whitesmoke;
+    width:21%;
+    margin: 0 1%;
+    border-radius:5%;
+    height:35vh;
+    text-align: center;
+}
+.each-card{
+   padding: 20% 0%;
+}
+.each-card img{
+    transform: scale(.5);
+    margin: -25% -5%;
+}
+.each-card h5{
+    color: orange;
+}
+.each-card:hover img{
+    animation: hovercard 3s  ease-in;
+}
+@keyframes hovercard{
+    from {
+        transform: scale(.5) rotate(0deg);
+    }
+    to {
+        transform: scale(.7) rotate(360deg);
+    }
+}
